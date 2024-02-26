@@ -1,0 +1,44 @@
+:root {
+  --primary: #2f2fa2;
+  --secondary: #242582;
+  --ternary: #f64c72;
+}
+
+.table {
+  border: 1px solid black;
+  border-collapse: separate;
+  border-spacing: 2px;
+  min-width: max-content;
+}
+
+.table_header {
+  position: sticky;
+  top: 0;
+  background-color: var(--primary);
+  color: white;
+}
+
+.table_wrapper {
+  max-height: 500px;
+  overflow-y: scroll;
+  margin: 20px;
+}
+
+.table_header,
+.table_data {
+  border: 1px solid black;
+  padding: 2px;
+}
+
+.outer_wrapper {
+  border: 1px solid black;
+  box-shadow: 0 0 3px black;
+  margin: 20px;
+  border-radius: 5px;
+  max-width: fit-content;
+}
+
+
+.align_center {
+  text-align: center;
+}

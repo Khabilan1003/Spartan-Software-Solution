@@ -1,0 +1,117 @@
+.container {
+  background: #007bff;
+  background: linear-gradient(to right, #0062e6, #33aeff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.formContainer {
+  width: 400px;
+  margin: auto;
+  padding: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.inputField {
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  border: 1px solid #707070;
+}
+
+.button {
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  background-color: red;
+  border: none;
+  margin: 5px;
+  padding: 8px;
+  font-weight: 700;
+  border-radius: 8px;
+  background-color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.google {
+  background-color: #ea4335;
+}
+
+.icons {
+  margin-right: 4px;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.horizontalLine {
+  width: 100%;
+  margin: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: #0062e6;
+  font-weight: 500;
+}
+
+/* Circular Loader */
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid #3498db;
+  width: 45px;
+  height: 45px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader_aligner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}

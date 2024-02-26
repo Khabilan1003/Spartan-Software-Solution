@@ -1,0 +1,30 @@
+/* src/components/Carousel.css */
+.carousel_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  border-radius: 1rem;
+}
+
+.carousel {
+  position: relative;
+  width: 92%;
+  height: 90%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.carousel_slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.active {
+  opacity: 1;
+}
