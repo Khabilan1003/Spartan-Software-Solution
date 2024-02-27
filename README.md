@@ -1,36 +1,57 @@
-# Installation Details
+# Installation Guide
 
-## Steps for Installation
-- Install MongoDB in Local Machine
-- Run API Code
-- Run the Websites
+This guide provides step-by-step instructions for installing and running the MongoDB database, API, and client/admin websites locally on your machine.
 
-## MongoDB 
-1. MongoDB Community Server
-   - First We have to install [MongoDB Community Server](https://www.mongodb.com/try/download/community).
-   - Select the appropriate version, OS and the package type.
-   - Download the file and install it in your computer.
-   - Once the installation is over restart your computer
-   - Now add the location of bin folder in mongodb in environment variable. In windows the default location will be ```C:\\Program Files\MongoDB\Server\[version]\bin```
-2. MongoDB Shell
-   - After installation MongoDB Server install [MongoDB Shell](https://www.mongodb.com/try/download/shell)
-   - Select the appropriate version, OS and package type.
-   - Download the file and install it in your computer.
-   - Now go to Command Prompt and enter the command ```mongosh```
-   - If the installation is corrent then it will go to mongo shell.
+## MongoDB Installation
 
-## API
-1. Go to the API folder in your terminal and run ```npm install``` to load all the packages
-2. Once the installation is over make sure the mongodb is running as background service. If not open a terminal and execute ```mongod``` to enable the server
-3. Now run the API using ```npm start```
+1. **MongoDB Community Server**: 
+   - Download MongoDB Community Server from [MongoDB's official website](https://www.mongodb.com/try/download/community).
+   - Choose the appropriate version, operating system, and package type.
+   - Follow the installation instructions and install MongoDB on your computer.
+   - After installation, restart your computer.
+   - Add the MongoDB bin folder path to your system's environment variables. For Windows, the default location is typically `C:\\Program Files\\MongoDB\\Server\\[version]\\bin`.
 
-## Client Website
-1. Go to Client Website and run ```npm install``` to load all the required packages
-2. Run ```npm start``` to start the website.
-3. Once the website is started it will show ```Premium Users can see the data``` because of no data in the database.
-4. So go to ```domain.com/loadData``` route and select the ```PERM_Data_Analyzer.xlsx``` then select sheet 2 and Submit the data. Once the data is stored successfully in the database you can see the data in the ```domain.com/viewData```.
+2. **MongoDB Shell**:
+   - Download MongoDB Shell from [MongoDB's official website](https://www.mongodb.com/try/download/shell).
+   - Select the suitable version, operating system, and package type.
+   - Install MongoDB Shell on your computer.
+   - Open a command prompt and type `mongosh`. If installed correctly, it should launch the MongoDB shell.
 
-## Admin Website
-1. Go to Admin Website and run ```npm install``` to load all the required packages
-2. Run ```npm start``` to start the website.
-3. There is no login added yet. So just click ```login button``` to enter the admin dashboard
+## API Setup
+
+1. **Navigate to API Folder**:
+   - Open your terminal and navigate to the API folder.
+   - Run `npm install` to install all the required packages.
+
+2. **Start MongoDB**:
+   - Ensure that MongoDB is running as a background service. If not, open a terminal and execute `mongod` to start the MongoDB server.
+
+3. **Run API**:
+   - Execute `npm start` in the API directory to start the API.
+
+## Client Website Setup
+
+1. **Navigate to Client Website Folder**:
+   - Open your terminal and navigate to the Client Website folder.
+   - Run `npm install` to install all the necessary packages.
+
+2. **Start Client Website**:
+   - Run `npm start` to start the client website.
+   - Initially, the website will display "Premium Users can see the data" as there is no data in the database.
+
+3. **Load Data**:
+   - Go to the `/loadData` route on the website.
+   - Select the `PERM_Data_Analyzer.xlsx` file and choose sheet 2, then submit the data.
+   - Once the data is successfully stored in the database, you can view it at `/viewData`.
+
+## Admin Website Setup
+
+1. **Navigate to Admin Website Folder**:
+   - Open your terminal and navigate to the Admin Website folder.
+   - Run `npm install` to install all the necessary packages.
+
+2. **Start Admin Website**:
+   - Run `npm start` to start the admin website.
+   - Note: There is no login functionality implemented yet, so simply click the "Login" button to access the admin dashboard.
+
+By following these steps, you should have MongoDB, API, client website, and admin website up and running locally on your machine.
