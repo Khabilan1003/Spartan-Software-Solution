@@ -21,3 +21,4 @@
 
 ## API
 1. Go to the API folder in your terminal and run ```npm install``` to load all the packages
+2. 
