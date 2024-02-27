@@ -21,4 +21,5 @@
 
 ## API
 1. Go to the API folder in your terminal and run ```npm install``` to load all the packages
-2. 
+2. Once the installation is over make sure the mongodb is running as background service. If not open a terminal and execute ```mongod``` to enable the server
+3. Now run the API using ```npm start```
